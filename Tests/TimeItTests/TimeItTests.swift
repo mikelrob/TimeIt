@@ -3,6 +3,11 @@ import TimeIt
 
 final class TimeItTests: XCTestCase {
 
+    static var allTests = [
+        ("testTimeItAccesses", testTimeItAccesses),
+        ("testTimeItCompletes", testTimeItCompletes),
+    ]
+
     func testTimeItAccesses() {
         TimeIt.log("test", entry: "first")
         TimeIt.log("test", entry: "second")
