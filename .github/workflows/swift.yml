@@ -9,14 +9,14 @@ on:
 jobs:
 
   lint:
-    runs-on: macos-10.15
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - name: Lint the code
       run: swiftlint lint
 
   build-xc12:
-    runs-on: macos-10.15
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - name: Select xcode
@@ -25,7 +25,7 @@ jobs:
       run: swift test
 
   build-xc12_2-beta:
-    runs-on: macos-10.15
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - name: Select xcode
@@ -34,7 +34,7 @@ jobs:
       run: swift test
 
   build-linux:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
