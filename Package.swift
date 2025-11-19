@@ -12,7 +12,8 @@ let package = Package(
     targets: [
         .target(
             name: "TimeIt",
-            dependencies: []),
+            dependencies: [],
+            resources: [.copy("TimeIt.docc")]),
         .testTarget(
             name: "TimeItTests",
             dependencies: ["TimeIt"]),
