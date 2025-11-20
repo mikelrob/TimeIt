@@ -29,7 +29,9 @@ TimeIt.complete(log: "myOperation") { logs in
 
 ## Documentation
 
-Full API documentation is available as DocC documentation. To generate and view the documentation:
+Full API documentation is available online at [https://mikelrob.github.io/TimeIt/documentation/timeit/](https://mikelrob.github.io/TimeIt/documentation/timeit/).
+
+You can also generate and view the documentation locally:
 
 ```bash
 swift package generate-documentation
